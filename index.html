@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio JAG</title>
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+        <link rel="icon" type="image/jpeg" href="images/jag.png">
+        <meta name="description" content="Portfolio de JAG">
+        <!-- open graph-->
+        <meta property="og:title" content="Portfolio de JAG">
+        <meta property="og:description" content="website de JAG">
+        <!-- alternativo en ingles
+        <link rel="alternate" href="https://jag.com" hreflang="es-GB">
+        -->
+        <!-- para indicar cual es la pg original
+        <link rel="canonical" href="https://jag.com">
+        -->
+        <style>
+            body {
+                background: rgba(208,208,208,0.9);
+                }
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Portfolio de JAG ⚽️</h1>
+        <!--
+        <iframe style="width:100%; aspect-ratio:16/9" src="https://www.youtube.com/embed/u72H_zZzkcw?si=m1owoQ9XwfpVzbEB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        -->
+        <dialog id="modal">
+            <h1>Se puede abrir un modal</h1>
+            <p>Es totalmente nativo</p>
+            <button id="cerrar">Cerrar</button>
+        </dialog>  
+        <button id="show">Ver más información</button>
+        <script>
+            window.show.addEventListener('click',()=>{
+                window.modal.showModal()
+            });
+            window.cerrar.addEventListener('click',()=>{
+                window.modal.close()
+            })
+        </script>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
+        </nav>
+    </header>    
+
+    <video muted src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"></video>
+    
+    <main>
+
+    <p><strong>Ingeniero de Software</strong> con 10 años de experiencia</p>
+
+    <h2 id="experiencia">Experiencia</h2>
+    <ul>
+        <li class="">ESII</li>
+        <li class="">Maestranza Aérea</li>
+    </ul>
+
+    <img title="foto de JAG" src="images/jag.png" alt="fotografía de Jose Antonio Gallud con cara seria con chaqueta y corbata">
+
+<!-- -->
+
+<h2 id="proyectos">Proyectos realizados</h2>
+<aside>
+    <header>
+        <h3>Mis tecnologías favoritas</h3>
+    </header>
+    <ol type="1">
+        <li>HTML</li>
+        <li>JavaScript</li>
+    </ol>
+</aside>
+<section>
+    <article>
+        <header>
+            <h4>Sitio Web Corporativo</h4>
+        </header>
+        <p>Desarrollo de un sitio Web corporativo con una interfaz amigable y moderna</p>
+        <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+        </footer>
+    </article>
+    <article>
+        <header>
+            <h4>Sitio Web Corporativo</h4>
+        </header>
+        <p>Desarrollo de un sitio Web corporativo con una interfaz amigable y moderna</p>
+        <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+        </footer>
+    </article>
+    <article>
+        <header>
+            <h4>La página de Tesla</h4>
+            <img style="width:100%; aspect-ratio:3438/1809" loading="lazy" src="images/tesla.png" alt="Captura de la web de Tesla">
+        </header>
+        <p>Elon Musk me pidió ayuda</p>
+        <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+        </footer>
+    </article>
+</section>
+<section>
+    <h2>Preguntas frecuentes</h2>
+    <details>
+        <summary>¿Cómo me contacto?</summary>
+        <p>Enviando un correo a jag@jag.com</p>
+    </details>
+    <details>
+        <summary>¿Cómo me llamo?</summary>
+        <p>JAG</p>
+    </details>
+</section>
+<section>
+    <h2>Formulario de contacto</h2>
+    <form method="post" action="/">
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="JAG" required>
+            <label for="em">email:</label>
+            <input type="email" id="em" name="em" placeholder="a@a.es" required>
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <div>
+                <label for="why">Por que quieres contactar?:</label>
+                <select name="why" id="why">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Consulta</option>
+                    <option value="3">Otros</option>
+                </select>
+            </div>
+            <div>
+                <label for="terms">Acepta los términos</label>
+                <input type="checkbox" id="terms" name="terms" required>
+            </div>
+
+            <div>
+                <datalist id="lang">
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                    <option value="C++"></option>
+                </datalist>
+                <label>Que lenguaje necesitas ayuda?</label>
+                <input list="lang" name="lang">
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar contacto">
+        <button type="submit">Enviar contacto</button>
+        <button>Borrar formulario</button>
+    </form>
+</section>
+</main>
+<footer>El portfolio más trabajado
+    <a href="mailto:jgallud@gmail.com">Enviame un correo</a>
+    <a href="whatsapp://send?text=hola JAG">Enviame un whatsapp</a>
+</footer>
+</body>
+
+</html>
